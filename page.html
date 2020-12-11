@@ -6,6 +6,7 @@
 </head>
 <body>
 
+<!--    Calculator Start -->
 <div id="container">
     <h1>Tip Calculator</h1>
     <div id="calculator">
@@ -24,12 +25,26 @@
                 <option value="0.15">15&#37; &#45; It was Okay</option>
                 <option value="0.1">10&#37; &#45; Bad</option>
                 <option value="0.05">5&#37; &#45; Terrible</option>
-        </form>
             </select>
-        </input>
+        </form>
+
+
+        <p>How many people are sharing the bill?</p>
+        <input id="peopleamt" type="text" placeholder="Number of People"> People
+        <button type="button" id="calculate">Calculate!</button>
 
     </div>
+    <!--  Calculator End -->
+
+    <!--  Total Tip Start -->
+
+    <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+    </div>
+    <!--  Total Tip End -->
 </div>
+
 
 </body>
 </html>
