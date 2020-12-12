@@ -19,4 +19,14 @@ function calulateTip() {
     } else {
         document.getElementById("each").style.display = "block";
     }
+
+//Calculate tip
+    var total = (billAmt * serviceQual) / numOfPeople;
+//Round the two decimal places
+    total = Math.round(total * 100) / 100;
+//Allows us to have two digits after decimal point
+    total = total.toFixed(2);
+//Display the tip
+    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("tip").innerHTML = total;
 }
